@@ -1,14 +1,27 @@
 Package: CoordFixR
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Coordinate Converter Web Application
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Hendrik", "Pehlke", , "hendrikpehlke@awi.de", role = c("aut", "cre"),
+           comment = c(ORCID = "orcid.org/0000-0003-1916-7831"))
+Description: This package calculates or converts coordinates of (nearly) all possible notations into decimal degrees. It does not matter whether degree, minute or second signs are included (e.g. '°'), whether spaces, underscores or slashes occur, whether designations such as north, south, west and east or minus signs (“-”) are included. Coordinates that contain text components such as “degrees”, “minutes” or “seconds” are also converted correctly without any problems.
+License: GPL (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-URL: https://github.com/HP-AWI/CoordFixR
-BugReports: https://github.com/HP-AWI/CoordFixR/issues
+RoxygenNote: 7.3.1
+Suggests: 
+    knitr (>= 1.45),
+    rmarkdown (>= 2.25)
+Imports:
+   shiny (>= 1.8.1.1),
+   dplyr (>= 1.1.3),
+   DT (>= 0.29),
+   leaflet (>= 2.2.0),
+   readxl (>= 1.4.3),
+   testthat (>= 3.0.0),
+   writexl (>= 1.5.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr

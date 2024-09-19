@@ -1,2 +1,4 @@
-^CoordFixR\.Rproj$
+^doc$
+^Meta$
+^.*\.Rproj$
 ^\.Rproj\.user$
