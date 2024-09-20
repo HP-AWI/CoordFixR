@@ -2,6 +2,9 @@ CoordFixR v1.0.0
 
 The first release of the package 'CoordFixR'.
 
+# To install from GitHub:
+devtools::install_github("HP-AWI/CoordfixR")
+
 **Description:**
 This package calculates or converts coordinates of (nearly) all possible notations into decimal degrees.
 
