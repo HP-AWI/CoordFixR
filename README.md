@@ -74,4 +74,15 @@ More than 460 different spellings of coordinates were tested and could be conver
 
 ## **Authors and Acknowledgment**
 
-Project Title was created by **[Hendrik Pehlke](https://github.com/uHP-AWI)**.
+**CoordFixR** was created by **[Hendrik Pehlke](https://github.com/uHP-AWI)**.
+
+## **Changelog**
+
+- **0.1.0:** Initial release
+- **0.1.1:** Fixed a bug in the build process
+- **0.2.0:** Added a new feature
+- **0.2.1:** Fixed a bug in the new feature
+
+## **Contact**
+
+If you have any questions or comments about Project Title, please contact **[Hendrik Pehlke](hendrik.pehlke@awi.de)**.
