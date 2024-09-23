@@ -2,7 +2,10 @@ CoordFixR v1.0.0
 
 The first release of the package 'CoordFixR'.
 
-# To install from GitHub:
+**Keywords**
+R package, Coordinate converting, geospatial data
+
+**To install from GitHub:**
 devtools::install_github("HP-AWI/CoordfixR")
 
 **Description:**
