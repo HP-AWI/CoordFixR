@@ -1,8 +1,8 @@
 # **CoordFixR v1.0.0**
 
 ## Table of Contents
-- [Description](Description)
-- [Important-Functions](Important Functions)
+- [Description](#Description)
+- [Important-Functions](#Important Functions)
 - [To-install-from-GitHub](To install from GitHub)
 - [Usage](Usage)
 - [Examples](Examples)
