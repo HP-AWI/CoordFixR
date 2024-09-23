@@ -1,5 +1,9 @@
 # **CoordFixR v1.0.0**
 
+## Table of Contents
+- [Description](#Description)
+- [Here are the most important functions](Here are the most important functions)
+
 
 
 ## **Description:**
@@ -46,7 +50,7 @@ The package is designed to simplify coordinate transfer for users who frequewntl
 ## **To install from GitHub:**
 
 
-install(devtools) # if not already installed
+install("devtools") # if not already installed
 
 devtools::install_github("HP-AWI/CoordfixR")
 
@@ -54,6 +58,7 @@ devtools::install_github("HP-AWI/CoordfixR")
 ## **Usage:**
 
 You run the app just type the following command:
+
 library(CoordfixR)
 
 CoordfixR::launch_app()
