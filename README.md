@@ -1,7 +1,9 @@
 **CoordFixR v1.0.0**
 
 
+
 **Description:**
+
 
 The **CoordFixR** package provides an R Shiny app that processes and converts coordinates from a wide variety of notations and converts them to decimal degress (DD).
 
@@ -19,6 +21,7 @@ The **CoordFixR** app can process various separators such as
 
 The application also accepts various decimal separators ('.' or ','). 
 The comma as a decimal separator is widely used in continental Europe (Germany, France, Italy, Poland, etc.) and South America (e.g. Argentina, Chile, Brazil, etc.).
+
 
 
 **Here are the most important functions**
@@ -40,8 +43,11 @@ The package is designed to simplify coordinate transfer for users who frequewntl
 
 **To install from GitHub:**
 
+
 install(devtools) # if not already installed
+
 devtools::install_github("HP-AWI/CoordfixR")
+
 
 
 **Examples:**
