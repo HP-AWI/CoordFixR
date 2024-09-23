@@ -2,17 +2,17 @@
 
 ## Table of Contents
 - [Description](#Description)
-- [Important-Functions](#Important Functions)
-- [To-install-from-GitHub](#To install from GitHub)
+- [Functions](#Functions)
+- [Installation](#Installation)
 - [Usage](#Usage)
 - [Examples](#Examples)
-- [Authors-and-Acknowledgment](#Authors and Acknowledgment)
+- [Author](#Authors)
 - [Changelog](#Changelog)
 - [Contact](#Contact)
 
 
 
-## **Description:**
+## **Description**
 
 
 The **CoordFixR** package provides an R Shiny app that processes and converts coordinates from a wide variety of notations and converts them to decimal degress (DD).
@@ -36,7 +36,7 @@ The comma as a decimal separator is widely used in continental Europe (e.g. Germ
 
 
 
-## **Important Functions**
+## **Functions**
 
 
 **Load Excel data**: Users can select and upload an Excel file from their computer.
@@ -53,7 +53,7 @@ The package is designed to simplify coordinate transfer for users who frequewntl
 
 
 
-## **To install from GitHub:**
+## **Installation**
 
 
 install("devtools") # if not already installed
@@ -61,7 +61,7 @@ install("devtools") # if not already installed
 devtools::install_github("HP-AWI/CoordfixR")
 
 
-## **Usage:**
+## **Usage**
 
 You run the app just type the following command:
 
@@ -70,7 +70,7 @@ library(CoordfixR)
 CoordfixR::launch_app()
 
 
-## **Examples:**
+## **Examples**
 
 
 '48° 51' 52.978" North'    will be converted to    '48.86471611111111'
@@ -84,7 +84,7 @@ etc'
 
 More than 460 different spellings of coordinates were tested and could be converted into decimal degrees.
 
-## **Authors and Acknowledgment**
+## **Author**
 
 **CoordFixR** was created by **[Hendrik Pehlke](https://github.com/uHP-AWI)**.
 
