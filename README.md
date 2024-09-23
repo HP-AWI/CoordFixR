@@ -3,12 +3,12 @@
 ## Table of Contents
 - [Description](#Description)
 - [Important-Functions](#Important Functions)
-- [To-install-from-GitHub](To install from GitHub)
-- [Usage](Usage)
-- [Examples](Examples)
-- [Authors-and-Acknowledgment](Authors and Acknowledgment)
-- [Changelog](Changelog)
-- [Contact](Contact)
+- [To-install-from-GitHub](#To install from GitHub)
+- [Usage](#Usage)
+- [Examples](#Examples)
+- [Authors-and-Acknowledgment](#Authors and Acknowledgment)
+- [Changelog](#Changelog)
+- [Contact](#Contact)
 
 
 
