@@ -85,4 +85,4 @@ More than 460 different spellings of coordinates were tested and could be conver
 
 ## **Contact**
 
-If you have any questions or comments about Project Title, please contact **[Hendrik Pehlke](hendrik.pehlke@awi.de)**.
+If you have any questions or comments about the package **CoordFixR**, please contact **[Hendrik Pehlke](hendrik.pehlke@awi.de)**.
