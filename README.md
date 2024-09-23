@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Description](Description)
-- [https://github.com/HP-AWI/CoordFixR/blob/master/README.md#here-are-the-most-important-functions](Here are the most important functions)
+- [Important-Functions](Important Functions)
 - [To-install-from-GitHub](To install from GitHub)
 - [Usage](Usage)
 - [Examples](Examples)
@@ -36,7 +36,7 @@ The comma as a decimal separator is widely used in continental Europe (e.g. Germ
 
 
 
-## **Here are the most important functions**
+## **Important Functions**
 
 
 **Load Excel data**: Users can select and upload an Excel file from their computer.
