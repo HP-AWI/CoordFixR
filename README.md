@@ -24,8 +24,11 @@ If wanted, the new table can be saved as an excel file.
 **Examples:**
 
 '48° 51' 52.978" N' will be converted to '48.86471611111111'
+
 '-22 degree 59 minutes 0 seconds' will be converted to '-22.98333333333333'
+
 '38_deg_53_min_23.298_sec' will be converted to '38.889805'
+
 '-77 deg 0 min 32.6016 sec' will be converted to '-77.009056'
 etc'
 
