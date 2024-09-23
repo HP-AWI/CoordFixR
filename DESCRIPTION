@@ -1,6 +1,6 @@
 Package: CoordFixR
 Title: Coordinate Converter Web Application
-Version: 0.0.1
+Version: 1.0.0
 Authors@R: 
     person("Hendrik", "Pehlke", , "hendrikpehlke@awi.de", role = c("aut", "cre"),
            comment = c(ORCID = "orcid.org/0000-0003-1916-7831"))
