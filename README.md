@@ -1,8 +1,8 @@
 # **CoordFixR v1.0.0**
 
 ## Table of Contents
-- [Description](#Description)
-- [Here-are-the-most-important-functions](Here are the most important functions)
+- [Description](Description)
+- [https://github.com/HP-AWI/CoordFixR/blob/master/README.md#here-are-the-most-important-functions](Here are the most important functions)
 - [To-install-from-GitHub](To install from GitHub)
 - [Usage](Usage)
 - [Examples](Examples)
