@@ -54,8 +54,9 @@ devtools::install_github("HP-AWI/CoordfixR")
 ## **Usage:**
 
 You run the app just type the following command:
+library(CoordfixR)
 
-launch_app()
+CoordfixR::launch_app()
 
 
 ## **Examples:**
