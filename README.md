@@ -13,6 +13,8 @@ It supports a wide range of formats, including those with
 - their abbreviations ('deg', 'min', 'sec')
 - even spelling mistakes (e.g. 'deegree') or slight changes (e.g. 'degrees' instead of 'degree') are processed by the app without any problems
 
+The app can also process different types of hemisphere designations such as 'North or N', 'South or S', 'East or E' or 'West or W'. The app also correctly interprets simple minus signs ('-') for the South and West hemispheres.
+
 The **CoordFixR** app can process various separators such as 
 - spaces (e.g. -9° 5'23''), 
 - slashes (e.g. -9°/5'/23'') or 
@@ -20,7 +22,7 @@ The **CoordFixR** app can process various separators such as
 - combinations of these (e.g. 9°_5'_23''/S)
 
 The application also accepts various decimal separators ('.' or ','). 
-The comma as a decimal separator is widely used in continental Europe (Germany, France, Italy, Poland, etc.) and South America (e.g. Argentina, Chile, Brazil, etc.).
+The comma as a decimal separator is widely used in continental Europe (e.g. Germany, France, Italy, Poland, etc.) and South America (e.g. Argentina, Chile, Brazil, etc.).
 
 
 
@@ -69,3 +71,7 @@ launch_app()
 etc'
 
 More than 460 different spellings of coordinates were tested and could be converted into decimal degrees.
+
+## **Authors and Acknowledgment**
+
+Project Title was created by **[Hendrik Pehlke](https://github.com/uHP-AWI)**.
