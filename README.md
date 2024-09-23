@@ -2,7 +2,13 @@
 
 ## Table of Contents
 - [Description](#Description)
-- [Here are the most important functions](Here are the most important functions)
+- [Here-are-the-most-important-functions](Here are the most important functions)
+- [To-install-from-GitHub](To install from GitHub)
+- [Usage](Usage)
+- [Examples](Examples)
+- [Authors-and-Acknowledgment](Authors and Acknowledgment)
+- [Changelog](Changelog)
+- [Contact](Contact)
 
 
 
