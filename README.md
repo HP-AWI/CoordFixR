@@ -21,9 +21,13 @@ The comma as a decimal separator is widely used in continental Europe (Germany, 
 **Here are the most important functions**
 
 **Load Excel data**: Users can select and upload an Excel file from their computer.
+
 **Column selections**: Users can select the columns of the loaded table that contain the geographical coordinates.
+
 **Coordinate conversion**: The app converts various coordinate formats (e.g. DMS, DDM) into decimal degress (DD) and creates new columns with the converted values.
+
 **Visualisation**: After conversion, users can plot the converted coordinates (points) on a interactive leaflet map to visualize their position. In this way, errors (e.g. confusion of x and y) or incorrect or missing hemisphere information can be quickly recognized and corrected.
+
 **Results storage**: The modified table, which now contains two new columns with the decimal coordinates, can be saved in the user's system as an Excel file.
 
 The package is designed to simplify coordinate transfer for users who frequewntly deal with mixed-format geographic data.
