@@ -28,7 +28,8 @@ It supports a wide range of formats, including those with
 - 'North or N', 
 - 'South or S', 
 - 'East or E' or,
-- 'West or W'. 
+- 'West or W'.
+ 
 The app also correctly interprets simple **minus signs ('-')** for the southern and western hemispheres.
 
 **Separators:** The **CoordFixR** app can process various separators such as 
