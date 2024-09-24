@@ -27,5 +27,5 @@ Depends:
     R (>= 2.10)
 LazyData: true
 VignetteBuilder: knitr
-URL: https://github.com/HP-AWI/CoordFixR
+URL: https://github.com/HP-AWI/CoordFixR, https://hp-awi.github.io/CoordFixR/
 BugReports: https://github.com/HP-AWI/CoordFixR/issues
