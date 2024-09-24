@@ -34,8 +34,8 @@ The app also correctly interprets simple **minus signs ('-')** for the southern 
 
 **Separators:** The **CoordFixR** app can process various separators such as 
 - spaces (e.g. -9° 5' 23.5''), 
-- slashes (e.g. -9°/5'/23.5'') or
-- back slashes (e.g. -9°\5'\23.5'') or 
+- slashes (e.g. -9°/5'/23.5''),
+- back slashes (e.g. -9°\5'\23.5''),
 - underscores (e.g. -9°_5'_23.5'') or
 - combinations of these (e.g. 9°_5'_23.5''\S)
 
