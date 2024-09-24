@@ -18,17 +18,17 @@
 The **CoordFixR** package provides an **R Shiny app** that processes and converts coordinates from a wide variety of notations and **converts them to decimal degress (DD)**.
 
 It supports a wide range of formats, including those with 
-- degree, minute and second symbols (**°**, **'**, **''**),
+- degree, minute and second symbols (**°, ' and ''**),
 - specification in word form such as '**degree**', '**minutes**', **seconds**' or
 - their abbreviations ('**deg**', '**min**', '**sec**')
 
 **Typos or slight changes:** Even spelling mistakes (e.g. 'deegrees') or slight changes (e.g. 'degree' or 'Degrees' instead of 'degrees') are processed by the app without any problems
 
 **Different hemisphere designations::** The app can also process different types of hemisphere designations such as 
--'North or N', 
--'South or S', 
--'East or E' or,
--'West or W'. 
+- 'North or N', 
+- 'South or S', 
+- 'East or E' or,
+- 'West or W'. 
 The app also correctly interprets simple **minus signs ('-')** for the southern and western hemispheres.
 
 **Separators:** The **CoordFixR** app can process various separators such as 
