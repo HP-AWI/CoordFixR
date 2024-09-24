@@ -15,7 +15,7 @@
 ## **Description**
 
 
-The **CoordFixR** package provides an **R Shiny app** that processes and converts coordinates from a wide variety of notations and **converts them to decimal degress (DD)**.
+The **CoordFixR** package provides an **R Shiny app** that processes and converts coordinates from a wide variety of notations and **converts them to decimal degress** (see **Examples**).
 
 It supports a wide range of formats, including those with 
 - degree, minute and second symbols (**°, ' and ''**),
@@ -33,16 +33,17 @@ It supports a wide range of formats, including those with
 The app also correctly interprets simple **minus signs ('-')** for the southern and western hemispheres.
 
 **Separators:** The **CoordFixR** app can process various separators such as 
-- spaces (e.g. -9° 5'23''), 
-- slashes (e.g. -9°/5'/23'') or 
-- underscores (e.g. -9°_5'_23'') or
-- combinations of these (e.g. 9°_5'_23''/S)
+- spaces (e.g. -9° 5' 23.5''), 
+- slashes (e.g. -9°/5'/23.5'') or 
+- underscores (e.g. -9°_5'_23.5'') or
+- combinations of these (e.g. 9°_5'_23.5''\S)
 
 **Leading zeros:** The app **CoordFixR** can also process coordinates which contain leading zeros (e.g. -009° 05'23'').
 
-**Decimal separators:** The application accepts both points ('.') and commas (',') as decimal separators.
-The comma as a decimal separator is widely used in continental Europe (e.g. Germany, France, Italy, Poland, etc.) and South America (e.g. Argentina, Chile, Brazil, etc.). 
-The new (converted) decimal degrees will have a decimal point. 
+**Decimal separators:** The application accepts both **points ('.')** and **commas (',')** as decimal separators ('-9 deg 5 min 23.5 sec' or '-9 deg 5 min 23,5 sec').
+The comma as a decimal separator is widely used in continental Europe (e.g. Germany, France, Italy, Poland, etc.) and South America (e.g. Argentina, Chile, Brazil, etc.).
+
+The new (converted) decimal degrees will have a decimal point (e.g. -9.089861). 
 
 
 
@@ -89,7 +90,6 @@ CoordfixR::launch_app()
 'W_38_deg_53_min_23.298_sec'    will be converted to    '-38.889805'
 
 'S77 deg 0 min 32.6016 sec'    will be converted to    '-77.009056'
-etc'
 
 More than 460 different spellings of coordinates were tested and could be converted into decimal degrees.
 
