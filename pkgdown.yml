@@ -1,0 +1,10 @@
+pandoc: 3.1.11
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  introduction: introduction.html
+  manual: manual.html
+last_built: 2024-09-24T13:04Z
+urls:
+  reference: https://hp-awi.github.io/CoordFixR/reference
+  article: https://hp-awi.github.io/CoordFixR/articles
