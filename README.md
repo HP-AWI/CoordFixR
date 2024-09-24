@@ -18,7 +18,7 @@
 The **CoordFixR** package provides an **R Shiny App** that processes coordinates from a variety of notations and converts them to **decimal degrees** (see **Examples**).
 
 It supports a wide range of formats, including those with 
-- degree, minute and second symbols (**°, ' and ''**),
+- degree, minute and second **symbols** (°, ' and ''),
 - specification in word form such as '**degree**', '**minutes**', **seconds**' or
 - their abbreviations ('**deg**', '**min**', '**sec**').
 
