@@ -197,19 +197,19 @@ CoordfixR::launch_app()
 If the user executes the ‘CoordfixR::launch_app()’ command in R, an
 R-Shiny app opens and the following window (see next figure) appears.
 <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_1.jpg" alt="Screenshot_1" style="border: 3px solid grey" />
+![Screenshot_1](man/figures/Screenshot_1.jpg)
 <br> <br> Left click on ‘Browse’ (1) under ‘Select Excel File’ to open
 an explorer window where you can select an Excel file on your computer
 hard drive or other storage device (e.g. USB stick). <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_2.jpg" alt="Screenshot_2" style="border: 3px solid grey" />
+![Screenshot_2](man/figures/Screenshot_2.jpg)
 <br> <br> The following figure shows how to browse for and select an
 Excel file. In this example an external portable hard drive was chosen.
 Left-click ‘Open’ to load the selected Excel file into R. <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_3.jpg" alt="Screenshot_3" style="border: 3px solid grey" />
+![Screenshot_3](man/figures/Screenshot_3.jpg)
 <br> <br> As soon as the Excel file is fully loaded (see next figure,
 \[1\]), the file is displayed as a table in the main window (next
 figure, \[2\]). <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_4.jpg" alt="Screenshot_4" style="border: 3px solid grey" />
+![Screenshot_4](man/figures/Screenshot_4.jpg)
 <br> <br> In the next step, the user needs to select the respective
 columns that contain the information about the longitude (aka ‘Long’,
 ‘Lon’ or also ‘’X’) and latitude (aka ‘Lat’ or ‘Y’) (see next figure,
@@ -217,7 +217,7 @@ steps 1 and 2).
 
 Once the correct columns have been selected, the conversion of the
 coordinates is started by left-clicking on ‘Calculate’ \[3\]. <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_5.jpg" alt="Screenshot_5" style="border: 3px solid grey" />
+![Screenshot_5](man/figures/Screenshot_5.jpg)
 <br> <br> When the calculation is complete, two new columns are added to
 the table containing the converted coordinates in decimal degree format.
 The decimal separator is a period.
@@ -232,7 +232,7 @@ Left-clicking on ‘Plot as Map’ will display the decimal coordinates as
 points on an interactive map \[3\]. If you accidentally select the wrong
 column, left-click on ‘Reset’ \[4\] to clear all selections and
 calculations and start again. <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_6.jpg" alt="Screenshot_4" style="border: 3px solid grey" />
+![Screenshot_6](man/figures/Screenshot_6.jpg)
 <br> <br> The map (see next figure) shows the geographical position of
 the points after the coordinates have been converted. The map is
 interactive; you can zoom in and out by scrolling the mouse wheel or
@@ -241,15 +241,15 @@ are close together, this is indicated by a) the green colour and b) a
 number inside the green point. The number represents the number of
 neighbouring points \[2\]. Left-clicking on a point automatically zooms
 it in. Other ‘basemaps’ can also be selected \[3\]. <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_7.jpg" alt="Screenshot_4" style="border: 3px solid grey" />
+![Screenshot_7](man/figures/Screenshot_7.jpg)
 <br> <br> If you are happy with the result, you can save the modified
 table as a new Excel spreadsheet by left-clicking on ‘Download Excel
 File’ (next figure, \[1\]). <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_8.jpg" alt="Screenshot_4" style="border: 3px solid grey" />
+![Screenshot_8](man/figures/Screenshot_8.jpg)
 <br> <br> The default path is the ‘Downloads’ folder (see next figure,
 \[1\]) and the default name of the Excel file is ‘output.xlsx’ \[2\].
 Both can be changed by the user in the window that opens. <br> <br>
-<img src="C:/Users/hpehlke/Documents/CoordFixR/man/figures/Screenshot_9.jpg" alt="Screenshot_4" style="border: 3px solid grey" />
+![Screenshot_9](man/figures/Screenshot_9.jpg)
 <br> <br>
 
 ## **Examples**
