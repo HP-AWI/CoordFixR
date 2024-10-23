@@ -15,16 +15,32 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+--------------------------------------------------------------------------------
+The development of the **'CoordFixR'** R-package is a result of the [**CoastCarb**](https://coastcarb.eu/) programme, funded under the European Union's Horizon 2020 research and innovation programme under Marie Skłodowska-Curie Grant Agreement No 872690.
+--------------------------------------------------------------------------------
+
 
 ## Summary
 
-This package **'CoordFixR'** calculates or converts coordinates from (almost) all possible notations into decimal degrees. 
+The package 'CoordFixR' calculates or converts coordinates from (almost) all possible notations into decimal degrees. 
 
 It does not matter whether characters or letters for degrees, minutes or seconds are included (e.g. “°” or “degree”), whether spaces, underscores or slashes occur, or whether designations such as “North”, “South”, “West” or “East” or minus signs (“-”) are included. 
 
 Coordinates that contain text components such as 'degrees', 'minutes' or 'seconds' are also correctly converted to decimal degree notation without any problems.
 
-## how to
+## Installation
+
+To install the app from GitHub you have to install the package 'devtools' first.
+
+```{r install, eval=F, echo=T}
+install("devtools") # if the package 'devtools' is not already installed on your device
+
+# install the development version of the package 'CoordFixR' from GitHub
+devtools::install_github("HP-AWI/CoordfixR")
+```
+
+
+## Load the package 'CoordFixR' into R
 
 After having successfully installed the package 'CoordFixR' you have to load it in R.
 
@@ -33,51 +49,11 @@ After having successfully installed the package 'CoordFixR' you have to load it 
 ```
 
 
+## Start the app
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+You run the app just type the following command:
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
-
-## Vignette Info
-
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
-
-## Styles
-
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
-
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
-
-## Figures
-
-The figure sizes have been customised so that you can easily put two images side-by-side. 
-
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+```{r run app, eval=F, echo=T}
+# start the app
+CoordfixR::launch_app()
 ```
-
-You can enable figure captions by `fig_caption: yes` in YAML:
-
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))

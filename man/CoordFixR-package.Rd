@@ -6,7 +6,16 @@
 \alias{CoordFixR-package}
 \title{CoordFixR: Coordinate Converter Web Application}
 \description{
-This package calculates or converts coordinates of (nearly) all possible notations into decimal degrees. It does not matter whether degree, minute or second signs are included (e.g. '°'), whether spaces, underscores or slashes occur, whether designations such as north, south, west and east or minus signs (“-”) are included. Coordinates that contain text components such as “degrees”, “minutes” or “seconds” are also converted correctly without any problems.
+This package calculates or converts coordinates of (nearly) all possible notations into decimal degrees. It does not matter whether degree, minute or second signs are included (e.g. '°'), whether spaces, underscores or slashes occur, whether designations such as north, south, west and east or minus signs (“-”) are included. Coordinates that contain text components such as “degrees”, “minutes” or “seconds” are also converted correctly without any problems. The development of the 'CoordFixR' R-package is a result of the CoastCarb programme, funded under the European Union's Horizon 2020 research and innovation programme under Marie Skłodowska-Curie Grant Agreement No 872690.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/HP-AWI/CoordFixR}
+  \item \url{https://hp-awi.github.io/CoordFixR/}
+  \item Report bugs at \url{https://github.com/HP-AWI/CoordFixR/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Hendrik Pehlke \email{hendrikpehlke@awi.de} (\href{https://orcid.org/orcid.org/0000-0003-1916-7831}{ORCID})

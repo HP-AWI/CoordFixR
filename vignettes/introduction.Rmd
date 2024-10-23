@@ -1,11 +1,12 @@
 ---
-title: "introduction"
+title: "Introduction"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{introduction}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -14,6 +15,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+
 ```{r setup}
 library(CoordFixR)
 ```
+
