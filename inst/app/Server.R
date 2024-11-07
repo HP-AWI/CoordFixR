@@ -26,96 +26,127 @@ function(input, output, session) {
   # selected_column is the name of the selected column
   # head(tmp)
   # i <- 1
-
+  ################################################################################
   FUNC_transform_degrees <- function(tmp, selected_column) {
-    tmp_result <- numeric(length(tmp))
-    # pon <- NULL
-    # pon <- ifelse(grepl("W|S", tmp), -1, 1)
+  tmp_result <- numeric(length(tmp))
+  # pon <- NULL
+  # pon <- ifelse(grepl("W|S", tmp), -1, 1)
 
-    i <- 1
-    for (i in seq_along(tmp)) {
+  i <- 10
+  for (i in seq_along(tmp)) {
+    if (exists("result1")) { result1 <- NA}
+
+    ##########################################################################
+    if (!grepl("\\d", tmp[i], perl = TRUE)) {
+      tmp4 <- 'NA'
+    } else {
       ##########################################################################
-      if (!grepl("\\d", tmp[i], perl = TRUE)) {
-        tmp4 <- 'NA'
+      pon <- 1
+      # Names or values for 'negative' hemispheres
+      value1 <- c("-",
+                  "W",
+                  "w",
+                  "S",
+                  "O",
+                  "o",
+                  "West",
+                  "Süd",
+                  "South",
+                  "Oeste",
+                  "Sur",
+                  "Ouest",
+                  "Sud")
+
+      # check if values of 'value1' is present in the actiual cell value (tmp[i])
+      p_n_test <- stringr::str_detect(tmp[i], value1)
+
+      # if so add a minus ("-") to the converted result value (DD, decimal degrees)
+      if (any(p_n_test)) {
+        pon <- -1
+      }
+
+      # if not remove 'pn_test'
+      rm(p_n_test)
+      #_____________________________________________________________________________
+      # Check if ',' is used as a decimal separator and replace with '.'
+      if (grepl(',', tmp[i])) {
+        # Replace ',' with '.'
+        # result1 <- gsub(',', '.', tmp[i])  # old version
+        result1 <- gsub(r"{(\d)\,(\d)}", r"{\1.\2}", tmp[i])  # new version
       } else {
-        ##########################################################################
-
-
-
-        pon <- 1
-        value1 <- c("-", "W", "w","S")
-
-        # check if "miz" is present in "Programiz"
-        p_n_test <- stringr::str_detect(tmp[i], value1)
-
-        if (any(p_n_test)) {
-          pon <- -1
-        }
-
-        rm(p_n_test)
-        #_____________________________________________________________________________
-        # Check if ',' is used as a decimal separator and replace with '.'
-        if (grepl(',', tmp[i])) {
-          # Replace ',' with '.'
-          # result1 <- gsub(',', '.', tmp[i])  # old version
-          result1 <- gsub(r"{(\d)\,(\d)}", r"{\1.\2}", tmp[i])  # new version
-        } else {
-          result1 <- tmp[i]
-        }
-
-        #_____________________________________________________________________________
-
-        # gsub('(/|S|N|W|E|°|\'|\'')',
-        # Replace all characters that are not numbers with '_'
-        results <- gsub('[^0-9.]', '_', result1)
-        rm(result1)
-
-        # Replace consecutive occurrences of '_' with a single '_'
-        results <- gsub('_+', '_', results)
-
-        # Remove '_' at the end of each string
-        results <- sub('_+$', '', results)
-
-        # Remove '_' at the beginning of each string
-        results <- sub('^_+', '', results)
-
-        tmp3 <- t(as.data.frame(strsplit(results, "_", fixed=FALSE)))
-        rm(results)
-
-        if (length(tmp3) == 1) {
-          tmp4 <- 'NA'
-          tmp4 <- pon * abs(as.numeric(tmp3[1]))
-        } else if (length(tmp3) == 2) {
-          d <- abs(as.numeric(tmp3[1]))
-          m <- as.numeric(tmp3[2]) / 60
-          s <- 0
-          tmp4 <- pon * (d + m + s)
-          rm(d, m, s)
-        } else if (length(tmp3) == 3) {
-          tmp4 <- 'NA'
-          d <- abs(as.numeric(tmp3[1]))
-          m <- as.numeric(tmp3[2]) / 60
-          s <- as.numeric(tmp3[3]) / 3600
-          tmp4 <- pon * (d + m + s)
-          rm(d, m, s)
-        }
-
-        ##########################################################################
-      }
-      # tmp_result[i] <- tmp4
-      if (!is.na(tmp4)){
-        tmp_result[i] <- as.numeric(tmp4)
+        result1 <- tmp[i]
       }
 
-      if (is.na(tmp4)){
-        tmp_result[i] <- NA
+      #_____________________________________________________________________________
+
+      # gsub('(/|S|N|W|E|°|\'|\'')',
+      # Replace all characters that are not numbers with '_'
+      if (exists("results")) { rm(results) }
+      results <- gsub('[^0-9.]', '_', result1)
+      rm(result1)
+
+      # Replace consecutive occurrences of '_' with a single '_'
+      results <- gsub('_+', '_', results)
+
+      # Remove '_' at the end of each string
+      results <- sub('_+$', '', results)
+
+      # Remove '_' at the beginning of each string
+      results <- sub('^_+', '', results)
+
+      tmp3 <- t(as.data.frame(strsplit(results, "_", fixed=FALSE)))
+      rm(results)
+
+      # if there are mor than three entries in tmp3 do this
+      if (length(tmp3) > 3) {
+        if (exists("drop_me")) { rm(drop_me) }
+        drop_me <- !is.na(as.numeric(tmp3))
+        tmp3 <- tmp3[which(drop_me==TRUE)]
+        rm(drop_me)
       }
-      # i <- i+1
+
+
+      if (length(tmp3) == 1) {
+        tmp4 <- 'NA'
+
+        # multiply with 'pon' to add "-" if coordinates in western or southern hemisphere
+        tmp4 <- pon * abs(as.numeric(tmp3[1]))
+
+        # else if the length of 'tmp3' is greater as 1
+      } else if (length(tmp3) == 2) {
+        d <- abs(as.numeric(tmp3[1]))
+        m <- as.numeric(tmp3[2]) / 60
+        s <- 0
+        tmp4 <- pon * (d + m + s)
+        rm(d, m, s)
+      } else if (length(tmp3) == 3) {
+        tmp4 <- 'NA'
+        d <- abs(as.numeric(tmp3[1]))
+        m <- as.numeric(tmp3[2]) / 60
+        s <- as.numeric(tmp3[3]) / 3600
+        tmp4 <- pon * (d + m + s)
+        rm(d, m, s)
+      }
+
+      ##########################################################################
     }
 
-    return(tmp_result)
-  }   # *** End of 'FUNC_transform_degrees <-' ***
-  ############################################################################
+    # add converted coordinates (decimal degrees) to th position 'i' of the result list
+    tmp_result[i] <- NA
+
+    if (!is.na(tmp4)){
+      tmp_result[i] <- as.numeric(tmp4)
+    }
+
+    if (is.na(tmp4)){
+      tmp_result[i] <- NA
+    }
+    # i <- i+1
+  }
+
+  return(tmp_result)
+}   # *** End of 'FUNC_transform_degrees <-' ***
+  ################################################################################
 
   # Read the selected Excel file
   data <- reactiveVal(NULL)
