@@ -149,7 +149,7 @@ To install the app from GitHub you have to install the package
 install("devtools") # if the package 'devtools' is not already installed on your device
 
 # install the development version from GitHub
-devtools::install_github("HP-AWI/CoordfixR")
+devtools::install_github("HP-AWI/CoordFixR")
 ```
 
 <br> <br>
@@ -161,7 +161,7 @@ followoing command:
 
 ``` r
 # load the package 'CoordFixR'
-library(CoordfixR)
+library(CoordFixR)
 ```
 
 <br> <br>
