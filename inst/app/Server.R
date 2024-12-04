@@ -42,39 +42,44 @@ function(input, output, session) {
     } else {
       ##########################################################################
       pon <- 1
-      # Names or values for 'negative' hemispheres
-      value1 <- c("-",
-                  "W",
-                  "w",
-                  "S",
-                  "O",
-                  "o",
-                  "West",
-                  "Süd",
-                  "South",
-                  "Oeste",
-                  "Sur",
-                  "Ouest",
-                  "Sud")
+        # Names or values for 'negative' hemispheres
+        value1 <- c("-",
+                    "W",
+                    "w")
 
-      # check if values of 'value1' is present in the actiual cell value (tmp[i])
-      if (exists("pattern")) { rm(pattern) }
-      # Regular Expression erstellen, um nur vollständige Wörter abzugleichen
-      pattern <- paste0("\\b(", paste(value1, collapse = "|"), ")\\b")
-      
-      # Abfrage mit str_detect
-      if (exists("p_n_test")) { rm(p_n_test) }
-      p_n_test <- stringr::str_detect(tmp[i], pattern)
-      p_n_test
-      rm(pattern)
-      
-      # if so add a minus ("-") to the converted result value (DD, decimal degrees)
-      if (any(p_n_test)) {
-        pon <- -1
-      }
-      
-      # if not remove 'pn_test'
-      rm(p_n_test)
+        value2 <- c("S")
+
+        value3 <- c("West",
+                    "Süd",
+                    "South",
+                    "Oeste",
+                    "Sur",
+                    "Ouest",
+                    "Sud")
+
+        # check if values of 'value1' is present in the actiual cell value (tmp[i])
+        if (exists("pattern")) { rm(pattern) }
+        # Regular Expression erstellen, um nur vollständige Wörter abzugleichen
+        pattern <- paste0("\\b(", paste(value2, collapse = "|"), ")\\b")
+
+
+        # Abfrage mit str_detect
+        if (exists("p_n_test")) { rm(p_n_test) }
+        p_n_test_1 <- stringr::str_detect(tmp[i], value1)
+        p_n_test_2 <- stringr::str_detect(tmp[i], pattern)
+        p_n_test_3 <- stringr::str_detect(tmp[i], value3)
+
+        p_n_test <- c(p_n_test_1, p_n_test_2, p_n_test_3)
+        # p_n_test
+        rm(pattern, p_n_test_1, p_n_test_2, p_n_test_3)
+
+        # if so add a minus ("-") to the converted result value (DD, decimal degrees)
+        if (any(p_n_test)) {
+          pon <- -1
+        }
+
+        # if not remove 'pn_test'
+        rm(p_n_test)
       #_____________________________________________________________________________
       # Check if ',' is used as a decimal separator and replace with '.'
       if (grepl(',', tmp[i])) {
