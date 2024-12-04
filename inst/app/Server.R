@@ -58,13 +58,21 @@ function(input, output, session) {
                   "Sud")
 
       # check if values of 'value1' is present in the actiual cell value (tmp[i])
-      p_n_test <- stringr::str_detect(tmp[i], value1)
-
+      if (exists("pattern")) { rm(pattern) }
+      # Regular Expression erstellen, um nur vollständige Wörter abzugleichen
+      pattern <- paste0("\\b(", paste(value1, collapse = "|"), ")\\b")
+      
+      # Abfrage mit str_detect
+      if (exists("p_n_test")) { rm(p_n_test) }
+      p_n_test <- stringr::str_detect(tmp[i], pattern)
+      p_n_test
+      rm(pattern)
+      
       # if so add a minus ("-") to the converted result value (DD, decimal degrees)
       if (any(p_n_test)) {
         pon <- -1
       }
-
+      
       # if not remove 'pn_test'
       rm(p_n_test)
       #_____________________________________________________________________________
