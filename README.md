@@ -187,7 +187,7 @@ You run the app just type the following command:
 
 ``` r
 # start the app
-CoordfixR::launch_app()
+CoordFixR::launch_app()
 ```
 
 <br> <br>
