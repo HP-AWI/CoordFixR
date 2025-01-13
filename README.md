@@ -273,10 +273,7 @@ Pehlke](https://github.com/uHP-AWI)**. <br> <br>
 
 ## **Changelog**
 
-- **0.1.0:** Initial release
-- **0.1.1:** Fixed a bug in the build process
-- **0.2.0:** Added a new feature
-- **0.2.1:** Fixed a bug in the new feature <br> <br>
+- **0.1.0:** Initial release<br> <br>
 
 ## **Contact**
 
