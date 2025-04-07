@@ -31,7 +31,7 @@ coordinates from a variety of notations and converts them to decimal
 degrees** (see **Examples**).
 Example files can be downloaded here: https://zenodo.org/records/15075681
 
-Please cite as: Pehlke, H. (2025). CoordFixR. Zenodo. https://doi.org/10.5281/zenodo.15075681
+Please cite as: Pehlke, H. (2025) „CoordFixR“. Zenodo, März 24, 2025. doi: 10.5281/zenodo.15075681.
 
 ## Supports a wide variety of formats and notations
 
