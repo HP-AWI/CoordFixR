@@ -1,4 +1,4 @@
-cff-version: 1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Hendrik"
@@ -6,6 +6,8 @@ authors:
   orcid: "https://orcid.org/0000-0003-1916-7831"
 title: "CoordFixR"
 version: 1.0
-doi: https://zenodo.org/records/15075681
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.15075681
 date-released: 2025-03-25
 url: "https://github.com/HP-AWI/CoordFixR"
